@@ -15,7 +15,7 @@ def encrypt_file(input_path, output_path, key):
     with open(output_path, 'wb') as f:
         f.write(cipher_text.encode('latin1'))
 
-    print(f"✅ Encrypted file saved as {output_path}")
+    print(f" Encrypted file saved as {output_path}")
 
 def decrypt_file(input_path, output_path, key):
     with open(input_path, 'rb') as f:
@@ -32,7 +32,7 @@ def decrypt_file(input_path, output_path, key):
     with open(output_path, 'w', encoding='utf-8') as f:
         f.write(plain_text)
 
-    print(f"✅ Decrypted file saved as {output_path}")
+    print(f" Decrypted file saved as {output_path}")
 
 # Example usage
 if __name__ == "__main__":
